@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ironyard</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1><%= link_to 'Home', root_path %></h1>
+<%= link_to "New Locations", new_location_path %>
+<%= link_to "New Student", new_student_path %>
+<%= link_to "New Teacher", new_teacher_path %>
+<%= link_to "New Class", new_classroom_path %>
+<%= link_to "List Locations", locations_path %>
+<%= link_to "List Students", students_path %>
+<%= link_to "List Teachers", teachers_path %>
+<%= link_to "List Classes", classrooms_path %>
+<%= yield %>
+
+</body>
+</html>
